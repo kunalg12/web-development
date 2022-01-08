@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>JavaScript to print prime numbers!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function printPrime() {
+                var i = 0;
+                var j = 0;
+ 
+                limit = document.getElementById('limit').value;
+ 
+                //loop till i equals to $limit
+                for (i = 1; i <= limit; i++) {
+                    c = 0;
+ 
+                    for (j = 1; j <= i; j++) {
+                        // % modules will give the reminder value, so if the reminder is 0 then it is divisible
+                        if (i % j == 0) {
+                            //increment the value of c
+                            c++;
+                        }
+                    }
+ 
+                    //if the value of c is 2 then it is a prime number
+                    //because a prime number should be exactly divisible by 2 times only (itself and 1)
+                    if (c == 2) {
+                        document.getElementById("result").insertAdjacentHTML('beforeend', i + '<br>');
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>JavaScript to print Prime numbers!</h2>
+        Enter the limit:  <input type="number" name="limit" id="limit" min="0" style="width: 100px;" />&nbsp<input type="submit" value="Print Prime Numbers" onclick="printPrime()" name="print" />
+        <div id="result"></div>
+    </body>
+</html>
