@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 20px;
+    flex-flow: flex-direction flex-wrap;
+
+}
+
+.container{
+    background: linear-gradient(to bottom #245e69 #85aeaa);
+    bottom: 0;
+    color: #cf1313;
+    display: block;
+    left: 0;
+    padding-top: 45px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+
+}
+
+h1{
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.cc,
+.cc-back{
+    background-color: #6e2b77;
+    border-radius: 10px;
+    display: block;
+    height: 195px;
+    letter-spacing:0.1rem ;
+    margin: 60px auto;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: 325px;
+}
+
+.chip{
+    background: #f0a153;
+  border-radius: 5px;
+  display: block;
+  height: 30px;
+  left: 30px;
+  position: absolute;
+  top: 50px;
+  width: 40px;
+  margin: 220px 560px;
+
+}
+
+.cc-no{
+    background: linear-gradient(#eee, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    bottom: 75px;
+    font-size: 20px;
+    left: 30px;
+    position: absolute;
+    margin: 370px 540px;
+
+}
+
+.cc-date{
+    background: linear-gradient(#eee, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    bottom: 40px;
+    left: 30px;
+    position: absolute;
+    margin: 520px 560px;
+
+}
+
+.cc-date-expiry{
+    left: 125px;
+    bottom: 40px;
+    left: 30px;
+    position: absolute;
+    margin: 380px 600px;
+    color: #c0c0c0;
+
+    
+}
+
+
+.cc-date.expiry::after {
+    -webkit-text-fill-color: #52185b;
+    content: 'Valid thru';
+    font-size: 8px;
+    left: -30px;
+    position: absolute;
+    text-transform: none;
+    top: -10px;
+    
+}
+
+.cc-name {
+    background: linear-gradient(#eee, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    bottom: 15px;
+    left: -30px;
+    position: absolute;
+    margin: 380px 600px;
+  }
+
+
+  .cc-magnet {
+    background-color: #c0c0c0;
+    display: block;
+    height: 30px;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+  }
+
+
+  
+  
+.bank-logo{
+    text-align: center;
+    position:relative;
+    z-index: 2;
+    left: 300px;
+    margin: 330px 490px;
+    display: inline;
+    
+
+}
+
+.Mastercard{
+    text-align: center;
+    bottom: 40px;
+    left: 300px;
+    position: absolute;
+    margin: 490px 370px;
+    color: skyblue;
+    font-size: 30px;
+
+}
+
+.cc-exp{
+    bottom: 40px;
+    left: 30px;
+    position: absolute;
+    margin: 380px 540px;
+    color: #c0c0c0;
+
+}
