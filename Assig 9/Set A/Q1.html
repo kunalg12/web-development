@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var welcome
+        var date = new Date();
+        var hour = date.getHours();
+        var minute =date.getMinutes();
+        var second = date.getSeconds();
+        if (minute < 10) {  
+         minute = "0" + minute;  
+        }  
+        // if (second < 10) {  
+        //  second = "0" + second;  
+    //    }  
+
+        if (hour < 12){
+            welcome="Good Morning";
+        }
+        else if (hour < 17){
+            welcome="Good Afternoon";
+        }
+        else {
+            welcome="Good Night"
+        }    
+        document.write("<h2>" + "<font color='red'>" + welcome + "</font>" + "");
+        document.write("<br>" + hour + ":" + minute);  
+
+    </script>
+</body>
+</html>

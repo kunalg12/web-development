@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p id="result"></p>
+</head>
+<body>
+    <script>
+        let choice=prompt('1.Square root\n2.Power\n3.Absoulute number');
+        choice=parseInt(choice);
+        switch (choice){
+                case 1:
+                let val=prompt('enter a number');
+                val=parseInt(val);
+                document.getElementById('result').innerHTML=Math.sqrt(val);
+                break;
+                
+                case 2: 
+                let num=prompt('enter a number');
+                let pow=prompt('enter a power');
+                document.getElementById('result').innerHTML=math.pow(num.pow);
+                break;
+
+                case 3:
+                    let key=prompt('enter a number');
+                    val=parseInt(val);
+                    document.getElementById('result').innerHTML=Math.abs(key);
+                    break;
+                  
+                default:
+                    document.getElementById('result').innerHTML='invalide choice';
+                    break;
+            }
+
+        
+    </script>
+</body>
+</html>

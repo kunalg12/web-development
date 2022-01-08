@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show"></p>
+</body>
+<script>
+    let choice = prompt("1.Display an a array \n2.Sort elements of an array \n3.Reverse elements of an array \n4.Search given number of array");
+    choice=parseInt(choice);
+    let key;
+    let array=[7,5,4,2,1];
+    switch(choice){
+        case 1:
+        document.getElementById("show").innerHTML=array;
+        break;
+    
+        case 2:
+        document.getElementById('show').innerHTML=array.sort();
+        break;
+
+        case 3:
+        document.getElementById('show').innerHTML=array.reverse();
+        break;
+
+        case 4:
+            key=prompt('Enter a element to find ?');
+            let=array.length;
+            key=parseInt(key);
+            for(i=0; i<=len; i++)
+            {
+                if(i==len){
+                    document.getElementById('show').innerHTML='Not present';
+                    break;
+                }
+                if(arr[i]==key){
+                    document.getElementById('show').innerHTML='Present';
+                    break;
+                }
+            }
+            break;
+            default:
+                document.getElementById('show').innerHTML='Invalide';
+                break;
+        }
+</script>
+</html>
